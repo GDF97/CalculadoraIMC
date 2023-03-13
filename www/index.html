@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
+    <script src="components/motor.js" type="text/javascript"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+        <center><h1 id="titulo"> Calculadora IMC    </h1></center>
+    <div class="container">
+        <form >
+            <label for="nome">Nome </label>
+            <input type="text" name="nome" placeholder="INSIRA SEU NOME" id="nome">
+
+            <label for="inputMassa">Massa:</label>
+            <input type="number" name="inputMassa" id="peso" placeholder="INSIRA SUA MASSA EM KG" step="0.1">
+            <label for="inputAltura">Altura:</label>
+            <input type="number" name="inputAltura" id="altura" placeholder="INSIRA SUA ALTURA EM METROS" step="0.01">
+            <input type="button" value="CALCULAR" id="btnCalcular" onclick="calcIMC()">
+            
+        </form>
+        
+    </div>
+    <center><p id="resultado" step="0.01"></p></center>
 </body>
 </html>
