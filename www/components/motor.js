@@ -7,22 +7,22 @@ function calcIMC(){
     var nome = document.getElementById('nome').value;
     var estado;
     if(IMC <= 18.5){
-        estado = "De Magreza";
+        estado = "de Magreza";
     }
     else if((IMC > 18.5) && (IMC <= 24.9)){
-        estado = "Saudavel"
+        estado = "Saudável"
     }
     else if((IMC => 25.0) && (IMC < 29.9)){
-        estado = "De Sobreso"
+        estado = "de Sobreso"
     }
     else if((IMC => 30.0) && (IMC < 34.9)){
-        estado = "De Obesidade Grau I"
+        estado = "de Obesidade Grau I"
     }
     else if((IMC => 35.0) && (IMC <=39.9)){
-        estado = "De Obesidade Grau II"
+        estado = "de Obesidade Grau II"
     }
     else{
-        estado = "De Obesidade Grau III";
+        estado = "de Obesidade Grau III";
     }
     document.getElementById('resultado').textContent = nome + ' seu IMC é: '+IMC.toFixed(2) + ' e você está em estado '+estado;
 

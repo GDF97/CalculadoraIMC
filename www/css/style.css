@@ -38,7 +38,7 @@ input[type="button"]{
 
 input[type="text"],
 input[type="number"]{
-    width: 75%;
+    width: 85%;
     text-align: center;
     height: 2rem;
     font-size: 1.2rem;
